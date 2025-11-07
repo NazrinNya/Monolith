@@ -13748,3 +13748,10 @@ Entries:
   id: 1521
   time: '2025-11-07T17:28:58.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2548
+- author: Onezero0
+  changes:
+    - type: Tweak
+      message: Reverted reduced faction role playtime requirements.
+  id: 1522
+  time: '2025-11-07T19:16:41.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2555
