@@ -19,7 +19,7 @@ public sealed partial class FrezonProductionReaction : IGasReactionEffect
         var initialTrit = mixture.GetMoles(Gas.Tritium);
 
         var efficiency = mixture.Temperature / Atmospherics.FrezonProductionMaxEfficiencyTemperature;
-        var loss =  float.Clamp(1 - efficiency, 0, 1); // Mono edit - Clamping to prevent variable going negative
+        var loss =  1 - efficiency;
 
         // How much the catalyst (N2) will allow us to produce
         // Less N2 is required the more efficient it is.
