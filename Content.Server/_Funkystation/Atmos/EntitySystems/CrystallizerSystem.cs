@@ -253,7 +253,7 @@ namespace Content.Server._Funkystation.Atmos.EntitySystems
 
             if (crystalMix.Temperature >= medianTemperature * MinDeviationRate && crystalMix.Temperature <= medianTemperature * MaxDeviationRate)
             {
-                crystallizer.QualityLoss = Math.Max(crystallizer.QualityLoss - progressAmountToQuality, -85f);
+                crystallizer.QualityLoss = Math.Max(crystallizer.QualityLoss - progressAmountToQuality, -25f); // Mono edit -85>-25. Crystallizer nerf
             }
 
             float heatCapacity = _atmos.GetHeatCapacity(crystalMix, true);
