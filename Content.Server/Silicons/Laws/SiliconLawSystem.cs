@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Chat.Managers;
+using Content.Server.Mapping;
 using Content.Server.Radio.Components;
 using Content.Server.Roles;
 using Content.Server.Station.Systems;
@@ -17,6 +18,7 @@ using Content.Shared.Wires;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Toolshed;
@@ -33,6 +35,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
+    [Dependency] private readonly IMapManager _map = default!; // Mono - Law update is grid-only now.
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -291,11 +294,14 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         component.Lawset.Laws = newLaws;
         NotifyLawsChanged(target, cue);
     }
-
     protected override void OnUpdaterInsert(Entity<SiliconLawUpdaterComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
         // TODO: Prediction dump this
         if (!TryComp(args.Entity, out SiliconLawProviderComponent? provider))
+            return;
+
+        // Mono edit start - Law update is grid-only now.
+        if (!_map.TryFindGridAt(Transform(args.Entity).MapPosition, out var grid, out var component))
             return;
 
         var lawset = GetLawset(provider.Laws).Laws;
@@ -303,8 +309,12 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
         while (query.MoveNext(out var update))
         {
+            if (Transform(update).GridUid != grid)
+                continue;
+
             SetLaws(lawset, update, provider.LawUploadSound);
         }
+        // Mono edit end
     }
 }
 
