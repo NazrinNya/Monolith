@@ -100,4 +100,18 @@ public sealed partial class BlockingComponent : Component
     /// </summary>
     [DataField]
     public bool IsClothing = false;
+
+    // Mono
+    /// <summary>
+    /// Walk speed modifier on shield activation. Works only with clothing.
+    /// </summary>
+    [DataField]
+    public float ClothingWalkModifierOnToggle = 1.0f;
+
+    // Mono
+    /// <summary>
+    /// Sprint speed modifier on shield activation. Works only with clothing.
+    /// </summary>
+    [DataField]
+    public float ClothingSprintModifierOnToggle = 1.0f;
 }

@@ -14,7 +14,8 @@
 //
 // SPDX-License-Identifier: MPL-2.0
 
-using Content.Shared._DV.Clothing.Events; // DeltaV - Introduce ClothingSlowResistance to Species
+using Content.Shared._DV.Clothing.Events;
+using Content.Shared.Blocking.Components;
 using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.Item.ItemToggle;
@@ -72,20 +73,35 @@ public sealed class ClothingSpeedModifierSystem : EntitySystem
     private void OnRefreshMoveSpeed(EntityUid uid, ClothingSpeedModifierComponent component, InventoryRelayedEvent<RefreshMovementSpeedModifiersEvent> args)
     {
         // DeltaV Start - Introduce ClothingSlowResistance to Species
-        if (!_toggle.IsActivated(uid))
+        if (!_toggle.IsActivated(uid)) // Mono edit - System improvements
             return;
+
+        // Mono edit start - Slow down on activating armor energy shield
+
+        var walkModifier = component.WalkModifier;
+        var sprintModifier = component.SprintModifier;
+
+        if (TryComp<BlockingComponent>(uid, out var blocking))
+        {
+            if (!_toggle.IsActivated(uid))
+                return;
+
+            walkModifier *= blocking.ClothingWalkModifierOnToggle;
+            sprintModifier *= blocking.ClothingSprintModifierOnToggle;
+        }
 
         if (_container.TryGetContainingContainer((uid, null), out var container))
         {
-            var ev = new ModifyClothingSlowdownEvent(component.WalkModifier, component.SprintModifier);
+            var ev = new ModifyClothingSlowdownEvent(walkModifier, sprintModifier);
             RaiseLocalEvent(container.Owner, ref ev);
 
             args.Args.ModifySpeed(ev.WalkModifier, ev.RunModifier);
         }
         else
         {
-            args.Args.ModifySpeed(component.WalkModifier, component.SprintModifier);
+            args.Args.ModifySpeed(walkModifier, sprintModifier);
         }
+        // Mono edit end
         // DeltaV End - Introduce ClothingSlowResistance to Species
     }
 
@@ -151,5 +167,6 @@ public sealed class ClothingSpeedModifierSystem : EntitySystem
             // inventory system will automatically hook into the event raised by this and update accordingly
             _movementSpeed.RefreshMovementSpeedModifiers(container.Owner);
         }
+
     }
 }

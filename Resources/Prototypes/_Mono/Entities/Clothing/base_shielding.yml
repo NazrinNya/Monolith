@@ -65,6 +65,8 @@
     passiveBlockFraction: 0.8
     activeBlockFraction: 1.0
     isClothing: true
+    clothingSprintModifierOnToggle: 0.8
+    clothingWalkModifierOnToggle: 0.8
   - type: Damageable
     damageContainer: Shield
   - type: Battery

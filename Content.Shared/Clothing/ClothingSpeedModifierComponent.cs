@@ -15,6 +15,12 @@ public sealed partial class ClothingSpeedModifierComponent : Component
 
     [DataField]
     public float SprintModifier = 1.0f;
+
+    /// <summary>
+    /// Mono edit - This is used to mark if toggle state of ItemToggle component affects ClothingSpeedComponent or not.
+    /// </summary>
+    [DataField]
+    public bool ItemToggleAffected = true;
 }
 
 [Serializable, NetSerializable]

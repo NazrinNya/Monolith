@@ -384,7 +384,8 @@
         Poison: 0.8 # Mono
   - type: ClothingSpeedModifier # Mono - Armor Value Changes
     walkModifier: 0.9
-    sprintModifier: 0.6
+    sprintModifier: 1
+    itemToggleAffected: false
   - type: FactionClothing
     faction: NanoTrasen
   - type: StaminaDamageResistance # Mono - Stamres
