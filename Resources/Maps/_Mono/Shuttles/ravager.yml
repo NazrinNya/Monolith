@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/25/2025 22:45:57
-  entityCount: 1293
+  time: 11/25/2025 23:16:20
+  entityCount: 1306
 maps: []
 grids:
 - 2
@@ -828,6 +828,12 @@ entities:
     - type: Transform
       pos: 23.5,15.5
       parent: 2
+  - uid: 426
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 15.5,10.5
+      parent: 2
   - uid: 505
     components:
     - type: Transform
@@ -873,14 +879,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,11.5
-      parent: 2
-- proto: AirlockEngineering
-  entities:
-  - uid: 426
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 15.5,10.5
       parent: 2
 - proto: AirlockGlassShuttleNfsdCapital
   entities:
@@ -6345,6 +6343,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 30.5,12.5
       parent: 2
+  - uid: 1203
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 5.5,10.5
+      parent: 2
 - proto: Protolathe
   entities:
   - uid: 101
@@ -6411,6 +6415,14 @@ entities:
     - type: Transform
       pos: 4.5,8.5
       parent: 2
+- proto: SignAi
+  entities:
+  - uid: 1305
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 26.5,8.5
+      parent: 2
 - proto: SignArmory
   entities:
   - uid: 440
@@ -6419,6 +6431,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 7.5,8.5
       parent: 2
+- proto: SignBridge
+  entities:
+  - uid: 1306
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,11.5
+      parent: 2
 - proto: SignDisposalSpace
   entities:
   - uid: 912
@@ -6426,6 +6446,14 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 22.5,16.5
+      parent: 2
+- proto: SignEngineering
+  entities:
+  - uid: 1302
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 15.5,11.5
       parent: 2
 - proto: SignInterrogation
   entities:
@@ -6442,6 +6470,22 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 10.5,8.5
+      parent: 2
+- proto: SignRND
+  entities:
+  - uid: 1304
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 21.5,6.5
+      parent: 2
+- proto: SignSecurity
+  entities:
+  - uid: 1303
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,11.5
       parent: 2
 - proto: SMESBasic
   entities:
@@ -6699,6 +6743,48 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 3.5,11.5
+      parent: 2
+  - uid: 1204
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 14.5,9.5
+      parent: 2
+  - uid: 1205
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 16.5,9.5
+      parent: 2
+  - uid: 1236
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 20.5,5.5
+      parent: 2
+  - uid: 1297
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 17.5,3.5
+      parent: 2
+  - uid: 1298
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 22.5,9.5
+      parent: 2
+  - uid: 1300
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 29.5,4.5
+      parent: 2
+  - uid: 1301
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 11.5,6.5
       parent: 2
 - proto: TableReinforced
   entities:
