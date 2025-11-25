@@ -22,7 +22,7 @@
 - type: gameMap
   id: Worm
   mapName: 'Wormr'
-  mapPath: /Maps/_Mono/Shuttles/worm.yml
+  mapPath: /Maps/_Mono/Shuttles/Carrier/worm.yml
   minPlayers: 0
   stations:
     Worm:
