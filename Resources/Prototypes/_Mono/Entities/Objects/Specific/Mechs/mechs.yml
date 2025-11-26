@@ -68,13 +68,14 @@
       - EWARMechMount
       - LightMechMount
       - IFFMechMount
-      
 
 
 # S2 Mechas
 - type: entity
-  id: AFInterceptor
+  id: BaseAFInterceptor
   parent: [ BaseMech, LightMechMount, BaseRestrictedContraband ]
+  abstract: true
+  categories: [ HideSpawnMenu ]
   name: AF-28 "Broadsword"
   description: One of the first purpose built Armored Frames, made to engage light targets and other Armored Frames.
   components:
@@ -142,8 +143,6 @@
     followEntity: true
   - type: Appearance
   - type: GenericVisualizer
-  - type: CanMoveInAir
-  - type: MovementAlwaysTouching
   # EXTREMELY slow in gravity. Only really good to taxi, and that's about it.
   - type: MovementSpeedModifier
     baseWalkSpeed: 0.2
@@ -171,6 +170,13 @@
     speedModifier: 3
     useSound:
       path: /Audio/Items/jaws_pry.ogg
+
+- type: entity
+  id: AFInterceptor
+  parent: BaseAFInterceptor
+  components:
+  - type: CanMoveInAir
+  - type: MovementAlwaysTouching
 
 - type: entity
   id: AFInterceptorBattery
@@ -229,7 +235,7 @@
 
 - type: entity
   id: AFInterceptorG
-  parent: [LightMultiroleMount, AFInterceptor]
+  parent: [LightMultiroleMount, BaseAFInterceptor]
   name: AF-28-G "Sabre"
   description: A modification of the Broadsword, the Sabre sacrifices it's jetpack and spaceproof shielding to function on planets. Has two hardpoints, which can carry Light or Medium hardpoints.
   components:
@@ -270,7 +276,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 6
-    baseWeightlessModifier: 0 # Ground mech.
+    baseWeightlessModifier: 1.5
   - type: Tag
     tags:
     - DoorBumpOpener
