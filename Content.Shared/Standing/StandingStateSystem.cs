@@ -15,6 +15,8 @@
 // SPDX-FileCopyrightText: 2023 Pieter-Jan Briers
 // SPDX-FileCopyrightText: 2024 Tayrtahn
 // SPDX-FileCopyrightText: 2025 Ark
+// SPDX-FileCopyrightText: 2025 NazrinNya
+// SPDX-FileCopyrightText: 2025 Redrover1760
 // SPDX-FileCopyrightText: 2025 SlamBamActionman
 // SPDX-FileCopyrightText: 2025 metalgearsloth
 //
