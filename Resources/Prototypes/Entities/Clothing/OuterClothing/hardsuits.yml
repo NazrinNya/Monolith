@@ -68,6 +68,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 #When adding new hardsuits, please try to keep the organization consistent with hardsuit-helmets.yml (if possible.)
+# Mono hardsuit overhaul - see https://github.com/Monolith-Station/Monolith/pull/2694 
 
 #CREW HARDSUITS
 #Basic Hardsuit
@@ -82,13 +83,13 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 0.85
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
         Caustic: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 0.9 # Mono
@@ -128,15 +129,15 @@
   - type: FireProtection
     reduction: 0.8
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.45
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.9
-        Heat: 0.8
-        Radiation: 0.5
+        Heat: 0.75
+        Radiation: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 0.85 # Mono
     sprintModifier: 0.85 # Mono
@@ -167,11 +168,11 @@
     highPressureMultiplier: 0.04
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.4
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
+        Blunt: 0.8
         Slash: 0.9
         Piercing: 0.9
         Shock: 0.8
@@ -193,7 +194,6 @@
     coefficient: 0.55 # slightly better than atmos hardsuit, cuz insulating plating or whatever
 
 #Spationaut Hardsuit
-# Mono edit start
 - type: entity
   parent: ClothingOuterHardsuitBase # Removed BaseCargoContraband
   id: ClothingOuterHardsuitSpatio
@@ -210,8 +210,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.70
-        Slash: 0.55
+        Blunt: 0.7
+        Slash: 0.6
         Piercing: 0.65
         Radiation: 0.25 #salv is supposed to have radiation hazards in the future
         Caustic: 0.45
@@ -251,18 +251,18 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.3
+    damageCoefficient: 0.4
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
+        Blunt: 0.45
         Slash: 0.7
-        Piercing: 0.5
-        Radiation: 0.3
-        Caustic: 0.7
+        Piercing: 0.75
+        Radiation: 0.15
+        Caustic: 0.85
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.55
@@ -301,8 +301,8 @@
         Radiation: 0.3
         Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
@@ -378,14 +378,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
+        Blunt: 0.5
         Slash: 0.6
-        Piercing: 0.6
-        Caustic: 0.7
+        Piercing: 0.5
+        Caustic: 0.8
         Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.4
@@ -415,13 +415,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.7
-        Heat: 0.7 # Goobstation
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Caustic: 0.8
+        Heat: 0.75 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
@@ -453,11 +454,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.6
-        Piercing: 0.6
+        Blunt: 0.35
+        Slash: 0.45
+        Piercing: 0.40
         Caustic: 0.7
-        Heat: 0.7 # Goobstation
+        Heat: 0.55 # Goobstation
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -536,12 +537,12 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.8
-        Piercing: 0.8
-        Heat: 0.4
+        Piercing: 0.85
+        Heat: 0.35
         Radiation: 0.0
         Caustic: 0.7
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
+    walkModifier: 0.8
     sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
@@ -560,7 +561,7 @@
   parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
   id: ClothingOuterHardsuitMedical
   name: chief medical officer's hardsuit
-  description: A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for easier movement.
+  description: A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for faster movement.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/medical.rsi
@@ -576,9 +577,10 @@
         Slash: 0.9
         Piercing: 0.9
         Caustic: 0.1
+        Poison: 0.1
   - type: ClothingSpeedModifier
-    walkModifier: 1 # 0.9-> 1 - Mono
-    sprintModifier: 1 # 0.95-> 1 - Mono
+    walkModifier: 1.10 # 0.9-> 1.10 - Mono
+    sprintModifier: 1.10 # 0.95-> 1.10 - Mono
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.7
@@ -666,13 +668,13 @@
       coefficients:
         Blunt: 0.6
         Slash: 0.5
-        Piercing: 0.5
+        Piercing: 0.45
         Radiation: 0.5
         Caustic: 0.6
-        Heat: 0.6 # Goobstation
+        Heat: 0.55 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.4
@@ -704,14 +706,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.8
-        Radiation: 0.5
-        Caustic: 0.8
+        Blunt: 0.7
+        Slash: 0.65
+        Piercing: 0.75
+        Radiation: 0.35
+        Caustic: 0.75
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.9
+    walkModifier: 1
+    sprintModifier: 1
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
