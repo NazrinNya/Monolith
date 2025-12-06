@@ -1,3 +1,5 @@
+# Mono - modsuit overhaul - see #2755 
+
 - type: entity
   parent: [ ClothingOuterBase, GeigerCounterClothing ] # Mono - add geiger
   id: ClothingModsuitChestplateStandard
