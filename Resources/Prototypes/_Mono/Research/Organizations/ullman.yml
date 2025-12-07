@@ -4,10 +4,9 @@
   entityIcon: UllmanWeaponPulsePistol
   discipline: Arsenal
   tier: 2
-  cost: 125000
+  cost: 50000
   recipeUnlocks:
   - UllmanWeaponPulsePistol
-  - UllmanWeaponPulseRifle
   technologyPrerequisites:
   - AdvancedParts
   - WeaponizedLaserManipulation
@@ -22,6 +21,7 @@
   cost: 350000
   recipeUnlocks:
   - UllmanWeaponPulseSniper
+  - UllmanWeaponPulseRifle
   - UllmanMeleePlasmaBlade
   - UllmanWeaponSmartMagnum
   - MagazineSmartMagnum
