@@ -37,7 +37,7 @@
   entityIcon: ClothingOuterHardsuitUIPilot
   discipline: Arsenal
   tier: 2
-  cost: 55000
+  cost: 25000
   recipeUnlocks:
   - UllmanHardsuitPilot
   - UllmanHardsuitEngineer
