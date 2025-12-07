@@ -1,6 +1,6 @@
 - type: entity
   name: combat power cell
-  description: A rechargeable standardized power cell. This combat brand is equipped with power spikes protection.
+  description: A rechargeable standardized power cell. This combat brand is equipped with partial protection from power spikes.
   id: PowerCellCombat
   suffix: Full
   parent: PowerCellHigh
