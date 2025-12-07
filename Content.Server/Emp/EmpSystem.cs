@@ -1,3 +1,4 @@
+using Content.Shared._Mono.Emp;
 using Content.Server.Entry;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Power.Components;
@@ -16,7 +17,8 @@ using Robust.Shared.Configuration; // Frontier: EMP Blast PVS
 using Robust.Shared; // Frontier: EMP Blast PVS
 using Content.Shared.Verbs; // Frontier: examine verb
 using Robust.Shared.Utility; // Frontier: examine verb
-using Content.Server.Examine; // Frontier: examine verb
+using Content.Server.Examine;
+using Content.Shared._Mono.Emp; // Frontier: examine verb
 
 namespace Content.Server.Emp;
 
@@ -101,6 +103,11 @@ public sealed class EmpSystem : SharedEmpSystem
     /// <param name="duration">The duration of the EMP effects.</param>
     public void DoEmpEffects(EntityUid uid, float energyConsumption, float duration)
     {
+        // Mono edit start
+        if (TryComp<EmpResistanceComponent>(uid, out var res))
+            energyConsumption *= res.Coefficient;
+        // Mono edit end
+
         var ev = new EmpPulseEvent(energyConsumption, false, false, TimeSpan.FromSeconds(duration));
         RaiseLocalEvent(uid, ref ev);
         if (ev.Affected)
