@@ -68,6 +68,6 @@
 
 - type: loadout
   id: MercenaryClothingOuterHardsuitMercenaryWarlord
-  price: 25000
+  price: 50000
   equipment:
     outerClothing: ClothingOuterHardsuitMercenaryWarlord
