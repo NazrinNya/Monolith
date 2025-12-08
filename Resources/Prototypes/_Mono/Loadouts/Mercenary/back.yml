@@ -27,3 +27,10 @@
   id: MercenaryClothingBackpackDuffelTacticalDuffelWhite
   equipment:
     back: ClothingBackpackDuffelTacticalDuffelWhite
+
+- type: loadout
+  id: MercenaryClothingModsuitSecurityPowerCell # Only to CC guards
+  price: 0
+  equipment:
+    back: ClothingModsuitSecurityPowerCell
+
