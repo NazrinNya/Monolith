@@ -47,13 +47,7 @@
   price: 5000
   equipment:
     outerClothing: ClothingModsuitAtmostechPowerCell
-
-- type: loadout
-  id: ContractorClothingModsuitParamedicPowerCell
-  price: 5000
-  equipment:
-    outerClothing: ClothingModsuitParamedicPowerCell
-
+    
 - type: loadout
   id: ContractorClothingModsuitEngineerPowerCell
   price: 5000
