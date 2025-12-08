@@ -1,16 +1,3 @@
-
-- type: loadout
-  id: MercenaryClothingModsuitSecurityPowerCell
-  price: 15000
-  equipment:
-    back: ClothingModsuitSecurityPowerCell
-
-- type: loadout
-  id: MercenaryClothingModsuitMercenaryPowerCell
-  price: 65000
-  equipment:
-    back: ClothingModsuitMercenaryPowerCell
-
 - type: loadout
   id: MercenaryClothingBackpackDuffelTacticalDuffelTan
   equipment:
