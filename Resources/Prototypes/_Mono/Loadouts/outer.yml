@@ -1,0 +1,61 @@
+#region Civilian suits
+- type: loadout
+  id: ContractorClothingOuterHardsuitCap
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitCap
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitVoidParamed
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitVoidParamed
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitSpatio
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitSpatio
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitEngineering
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitEngineering
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitSalvage
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitSalvage
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitAtmos
+  price: 3500
+  equipment:
+    outerClothing: ClothingOuterHardsuitAtmos
+
+#region Civilian modsuits.
+- type: loadout
+  id: ContractorClothingModsuitCaptainPowerCell
+  price: 5000
+  equipment:
+    outerClothing: ClothingModsuitCaptainPowerCell
+
+- type: loadout
+  id: ContractorClothingModsuitAtmostechPowerCell
+  price: 5000
+  equipment:
+    outerClothing: ClothingModsuitAtmostechPowerCell
+
+- type: loadout
+  id: ContractorClothingModsuitParamedicPowerCell
+  price: 5000
+  equipment:
+    outerClothing: ClothingModsuitParamedicPowerCell
+
+- type: loadout
+  id: ContractorClothingModsuitEngineerPowerCell
+  price: 5000
+  equipment:
+    outerClothing: ClothingModsuitEngineerPowerCell

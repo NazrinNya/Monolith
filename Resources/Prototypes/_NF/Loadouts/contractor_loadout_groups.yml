@@ -286,6 +286,12 @@
   - ContractorClothingBackpackDuffelMime
   - ContractorClothingBackpackSatchelMime
   - ContractorClothingBackpackMessengerMime
+  ## Mono start
+  - ContractorClothingModsuitAtmostechPowerCell
+  - ContractorClothingModsuitCaptainPowerCell
+  - ContractorClothingModsuitEngineerPowerCell
+  - ContractorClothingModsuitParamedicPowerCell
+  ## Mono end
   fallbacks:
   - ContractorClothingBackpack
 
@@ -380,6 +386,14 @@
   - ContractorWetFloorSign
   - ContractorClothingOuterCoatExpensive
   - ContractorClothingOuterCoatSpaceAsshole
+  ## Mono start
+  - ContractorClothingOuterHardsuitAtmos
+  - ContractorClothingOuterHardsuitCap
+  - ContractorClothingOuterHardsuitEngineering
+  - ContractorClothingOuterHardsuitSalvage
+  - ContractorClothingOuterHardsuitSpatio
+  - ContractorClothingOuterHardsuitVoidParamed
+  ## Mono end
 
 - type: loadoutGroup
   id: ContractorBelt
