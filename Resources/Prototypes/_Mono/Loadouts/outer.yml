@@ -6,12 +6,6 @@
     outerClothing: ClothingOuterHardsuitCap
 
 - type: loadout
-  id: ContractorClothingOuterHardsuitVoidParamed
-  price: 3500
-  equipment:
-    outerClothing: ClothingOuterHardsuitVoidParamed
-
-- type: loadout
   id: ContractorClothingOuterHardsuitSpatio
   price: 3500
   equipment:
