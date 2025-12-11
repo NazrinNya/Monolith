@@ -33,7 +33,7 @@
   - WeaponLaserCarbine
   - WeaponMechCombatFiredartLaser # Goobstation
   - WeaponLaserSvalinn # Mono
-#  - NFBlueprintWeaponLaserSvalinn # Frontier
+  - NFBlueprintWeaponLaserSvalinn # Frontier
   technologyPrerequisites:
   - BasicParts
   position: 2, 3
