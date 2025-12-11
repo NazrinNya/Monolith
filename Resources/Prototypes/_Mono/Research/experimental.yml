@@ -45,7 +45,7 @@
   - ProximitySensor
   technologyPrerequisites:
   - BasicParts
-  position: -1, -5
+  position: -1, -1
 
 - type: technology
   id: BasicParts
@@ -71,4 +71,4 @@
   - AnomalyVesselExperimentalCircuitboard
   technologyPrerequisites:
   - BasicResearch
-  position: -2, -5
+  position: -1, -2

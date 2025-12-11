@@ -75,7 +75,7 @@
   # Mono edit end
   technologyPrerequisites:
   - BasicParts
-  position: 6, -1
+  position: 2, -2
 
 # Mono edit - research consolidation
 # - type: technology
@@ -225,7 +225,7 @@
   - JanicartFlatpack
   technologyPrerequisites:
   - BasicParts
-  position: 5, -1
+  position: 2, -3
 
 - type: technology
   id: HONKMech

@@ -19,7 +19,7 @@
   - ElectricRangeMachineCircuitboard # Mono
   technologyPrerequisites: 
   - BasicParts
-  position: 4, -1
+  position: 3, -2
 
 - type: technology
   id: MiscellaneousItemsOrganization
@@ -49,7 +49,7 @@
   - NFPouchCargo
   technologyPrerequisites:
   - BasicParts
-  position: 7, -1
+  position: 3, -3
 
 # Tier 2
 

@@ -25,7 +25,7 @@
   - MechEquipmentKineticAccelerator # Goobstation
   technologyPrerequisites:
   - BasicParts
-  position: -2, 1
+  position: -1, 1
 
 - type: technology
   id: SpaceScanning
@@ -40,7 +40,7 @@
   - BorgModuleGPS
   technologyPrerequisites:
   - BasicParts
-  position: -5, 2
+  position: -2, 0
 
 # - type: technology
 #   id: AdvancedPowercells
@@ -147,7 +147,7 @@
   - GasRecyclerMachineCircuitboard
   technologyPrerequisites:
   - BasicParts
-  position: -4, 2
+  position: -2, 1
 
 # Tier 2
 
@@ -185,7 +185,7 @@
   #  - FireExtinguisherBluespace # DeltaV
   technologyPrerequisites:
   - AtmosphericTech
-  position: -4, 3
+  position: -2, 2
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -235,7 +235,7 @@
   technologyPrerequisites:
   - SalvageEquipment
   - AdvancedParts
-  position: -2, 2
+  position: -1, 2
 
 # Tier 3
 
