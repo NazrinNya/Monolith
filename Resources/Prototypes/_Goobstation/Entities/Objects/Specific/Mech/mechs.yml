@@ -552,7 +552,7 @@
     brokenState: darkgygax-broken
     mechToPilotDamageMultiplier: 0.15
     airtight: true
-    maxIntegrity: 625
+    maxIntegrity: 900 
     maxEquipmentAmount: 4
     pilotWhitelist:
       components:
