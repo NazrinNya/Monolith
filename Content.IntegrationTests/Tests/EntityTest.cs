@@ -10,6 +10,7 @@ using Robust.Shared.Log;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;
+using Serilog;
 
 namespace Content.IntegrationTests.Tests
 {
@@ -108,6 +109,7 @@ namespace Content.IntegrationTests.Tests
                     .ToList();
                 foreach (var protoId in protoIds)
                 {
+                    Logger.Info(protoId);
                     SpawnEntity(entityMan, protoId, map.GridCoords); // Monolith
                 }
             });
