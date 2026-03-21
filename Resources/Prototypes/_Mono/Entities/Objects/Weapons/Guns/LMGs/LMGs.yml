@@ -12,14 +12,14 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -20
+    minAngle: -70
+    maxAngle: -91
   - type: Gun
-    minAngle: 22
-    maxAngle: 40
+    minAngle: 71
+    maxAngle: 95
     angleIncrease: 2
     angleDecay: 22
-    fireRate: 8
+    fireRate: 9.5
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -60,8 +60,12 @@
     price: 1750
     vendPrice: 50000
   - type: SpeedModifiedOnWield
-    walkModifier: 0.8
-    sprintModifier: 0.65
+    walkModifier: 0
+    sprintModifier: 0
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 7
+    pvsIncrease: 0.7
   - type: GunRequiresWield
   - type: PirateBountyItem # Mono
     id: ExperimentalFactionWeapon
@@ -154,13 +158,13 @@
     sprite: _Mono/Objects/Weapons/Guns/LMGs/HAMMER/hammer-inhands.rsi
   - type: GunWieldBonus
     minAngle: -23
-    maxAngle: -28
+    maxAngle: -30
   - type: Gun
     minAngle: 24
     maxAngle: 36
     angleIncrease: 3
     angleDecay: 34
-    fireRate: 6 # 360 rpm
+    fireRate: 7.5
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -299,8 +303,8 @@
     sprintModifier: 0.9
     walkModifier: 0.9
   - type: SpeedModifiedOnWield
-    walkModifier: 0.4
-    sprintModifier: 0.35
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: WieldDelay
     baseDelay: 2
     modifiedDelay: 2

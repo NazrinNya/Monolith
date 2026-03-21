@@ -49,10 +49,9 @@
   description: "A turbo laser ripped from the guardian unit. Appears to be a rather old model. Doesn't seem to be working properly. Supposedly highly illegal."
   components:
   - type: MultiHandedItem
-  - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.7
   - type: HeldSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: Item
     size: Ginormous
     inhandVisuals:
@@ -87,15 +86,18 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: Battery
-    maxCharge: 4000
-    startingCharge: 4000
+    maxCharge: 8000
+    startingCharge: 8000
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 80
   - type: Gun
-    selectedMode: FullAuto
+    selectedMode: Burst
     availableModes:
-    - FullAuto
+    - Burst
+    burstFireRate: 12
+    shotsPerBurst: 8
+    burstCooldown: 0.6
     fireRate: 8
     minAngle: 1
     maxAngle: 10

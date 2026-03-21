@@ -106,8 +106,8 @@
     capacity: 5
     proto: Cartridge145x114mm
   - type: SpeedModifiedOnWield
-    walkModifier: 0.25
-    sprintModifier: 0.25
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 7 # Mono - Sniper Buff

@@ -14,13 +14,13 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/SMGs/mla73.rsi
   - type: GunWieldBonus
-    minAngle: -20
+    minAngle: -32
     maxAngle: -34
   - type: Gun
-    minAngle: 21
-    maxAngle: 38
-    angleIncrease: 5
-    angleDecay: 20
+    minAngle: 35
+    maxAngle: 68
+    angleIncrease: -3
+    angleDecay: -20
     fireRate: 9.5
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mla_fire.ogg
@@ -244,7 +244,7 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/SMGs/NTSF-HCLM-45rsi
   - type: Gun
-    fireRate: 6
+    fireRate: 4.8
     selectedMode: FullAuto
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
@@ -255,7 +255,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine45_magnumPistolFMJ
+        startingItem: Magazine45_magnumSubMachineGunFMJ
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2

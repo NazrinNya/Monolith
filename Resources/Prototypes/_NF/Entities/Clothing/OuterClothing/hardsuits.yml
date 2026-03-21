@@ -500,7 +500,7 @@
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.45 # Mono
-        Heat: 0.55
+        Heat: 0.5w
         Radiation: 0.5 # Added Radiation Resist
         Caustic: 0.65
   - type: ExplosionResistance
