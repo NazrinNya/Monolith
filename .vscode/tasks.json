@@ -41,6 +41,23 @@
             "problemMatcher": "$msCompile"
         },
         // Frontier end
+        // mono
+        {
+            "label": "build-tools",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "--configuration=Tools",
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
         {
             "label": "build-yaml-linter",
             "command": "dotnet",

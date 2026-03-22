@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Client",
             "type": "coreclr",
@@ -66,7 +67,16 @@
                 "Server",
                 "Client"
             ]
-        }
+        },
         // Frontier end
+        // mono
+        {
+            "name": "Server/Client (Tools)",
+            "configurations": [
+                "Server",
+                "Client"
+            ],
+            "preLaunchTask": "build-tools"
+        }
     ]
 }

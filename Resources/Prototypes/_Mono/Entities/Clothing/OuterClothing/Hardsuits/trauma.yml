@@ -27,8 +27,8 @@
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.45
   - type: ClothingSpeedModifier
-    walkModifier: 1.15
-    sprintModifier: 1.15
+    walkModifier: 1.05
+    sprintModifier: 1.05
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
@@ -57,21 +57,21 @@
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.6
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.6
         Slash: 0.6
         Piercing: 0.4
-        Heat: 0.55
+        Heat: 0.5
         Radiation: 0.5
         Caustic: 0.6
   - type: StaminaDamageResistance
-    coefficient: 0.55
+    coefficient: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 1.05
-    sprintModifier: 1.05
+    walkModifier: 0.9
+    sprintModifier: 0.92
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing

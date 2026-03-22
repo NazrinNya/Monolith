@@ -144,11 +144,11 @@
       coefficients:
         Blunt: 0.35
         Slash: 0.35
-        Piercing: 0.35
+        Piercing: 0.3 # Mono
         Heat: 0.35
         Caustic: 0.5
   - type: ExplosionResistance
-    damageCoefficient: 0.35
+    damageCoefficient: 0.3 # Mono
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
