@@ -7,7 +7,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Administration.Commands;
 
-[AdminCommand(AdminFlags.AdminWho)]
+
+[AnyCommand] // Corvax-forge - Allow use to everyone
 public sealed class AdminWhoCommand : IConsoleCommand
 {
     public string Command => "adminwho";
