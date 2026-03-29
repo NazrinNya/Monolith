@@ -259,12 +259,12 @@
 - type: company
   id: RedSailCorsairs
   form: Antagonist
-  name: RedSail Corsairs 
+  name: RedSail Corsairs
   description: redsail-corsairs-description
   color: "#930000"
   image: /Textures/_Mono/Companies/redsailcorsairs.png
   disabled: true
-  logins: # 20 total
+  logins: # Waiting for others to give me theyr SS14 names, 17 total
   - Corrupt
   - Jasos
   - Luksu
@@ -272,20 +272,20 @@
   - Wawa_pull
   - Pffy
   - SouthernSaint
-  - Birdadoido
   - Abbyssl
   - MSMarvin
   - Dusky
-  - Middleagedman
-  - EmmaFaith
   - soulvapor
+  - EmmaFaith
   - Ether
   - MapleSilk
   - Spacepeing
-  - zigcraft 
+  - zigcraft
   - burrrkeye
   - enkidienne
   - chugaa
+  - SLDuggy
+  - Middleagedman
 
 - type: company
   id: Renegates
