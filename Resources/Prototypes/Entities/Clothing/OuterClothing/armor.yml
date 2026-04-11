@@ -113,12 +113,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
+        Blunt: 0.7 # mono 0.9 -> 0.7
+        Slash: 0.7 # mono 0.9 -> 0.7
+        Piercing: 0.7 # mono 0.9 -> 0.7
         Heat: 0.3 # this technically means it protects against fires pretty well? -heat is just for lasers and stuff, not atmos temperature # Mono - 0.4->0.3
   - type: Reflect
-    reflectProb: 0.9 # mono - 0.9 from frontier 0.7 from wizden 1
+    reflectProb: 0.45 # mono - 0.45 from frontier 0.7 from wizden 1
     reflects:
       - Energy
   - type: StaminaDamageResistance # Mono - Stamres
@@ -153,7 +153,7 @@
     walkModifier: 0.9
     sprintModifier: 0.9
   #Shoulder mounted flashlight
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       outerClothing:
@@ -241,16 +241,19 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.5
-        Heat: 0.7
+        Blunt: 0.25
+        Slash: 0.2
+        Piercing: 0.25
+        Heat: 0.35
         Caustic: 0.75
   - type: GroupExamine
+  - type: ClothingSpeedModifier
+    walkModifier: 0.25
+    sprintModifier: 0.25
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
   - type: ExplosionResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.3
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.1
 
@@ -311,10 +314,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
+        Blunt: 0.65 # mono
+        Slash: 0.65 # mono
         Piercing: 0.65 # Mono: 0.6<0.65
-        Heat: 0.5
+        Heat: 0.55 # mono
         Caustic: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 1.0

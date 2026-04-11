@@ -188,8 +188,8 @@
       soundRack:
         path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
     - type: Gun
-      minAngle: 21
-      maxAngle: 32
+      minAngle: 17 # Mono
+      maxAngle: 27 # Mono
       fireRate: 6
       burstFireRate: 12
       soundGunshot:

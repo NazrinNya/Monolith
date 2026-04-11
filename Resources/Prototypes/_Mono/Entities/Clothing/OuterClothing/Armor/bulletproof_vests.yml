@@ -14,7 +14,7 @@
       coefficients:
         Blunt: 0.85
         Slash: 0.85
-        Piercing: 0.45
+        Piercing: 0.35
         Heat: 0.85
         Caustic: 0.9 # Frontier
   - type: Tag  # Mono
@@ -24,6 +24,8 @@
     coefficient: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.90
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.95
   - type: StaticPrice
     price: 5000
     vendPrice: 8000
@@ -44,7 +46,7 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.7
-        Piercing: 0.35
+        Piercing: 0.28
         Heat: 0.75
         Caustic: 0.9 # Frontier
   - type: Tag  # Mono
@@ -53,7 +55,7 @@
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.65
   - type: ClothingSpeedModifier
-    sprintModifier: 0.95
+    sprintModifier: 0.88
   - type: ExplosionResistance
     damageCoefficient: 0.80
   - type: StaticPrice
@@ -74,21 +76,21 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.25
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.15
         Heat: 0.9
-        Caustic: 0.3 # Frontier
+        Caustic: 0.65 # Frontier
   - type: Tag  # Mono
     tags:
     - Kevlar
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.40
   - type: ClothingSpeedModifier
-    sprintModifier: 0.55
+    sprintModifier: 0.5
     walkModifier: 0.65
   - type: ExplosionResistance
-    damageCoefficient: 0.60
+    damageCoefficient: 0.8
   - type: StaticPrice
     price: 10000
     vendPrice: 15000
@@ -133,7 +135,7 @@
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Armor/bulletproof_stabproof.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/OuterClothing/Armor/bulletproof_stabprooft.rsi
+    sprite: _Mono/Clothing/OuterClothing/Armor/bulletproof_stabproof.rsi
   - type: Armor
     modifiers:
       coefficients:

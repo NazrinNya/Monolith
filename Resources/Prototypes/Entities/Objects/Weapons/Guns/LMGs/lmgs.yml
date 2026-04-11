@@ -22,11 +22,11 @@
     minAngle: -20
     maxAngle: -20
   - type: Gun # L6 LMG stats adjusted
-    minAngle: 24
-    maxAngle: 45
-    angleIncrease: 3
+    minAngle: 15
+    maxAngle: 35
+    angleIncrease: 2
     angleDecay: 20
-    fireRate: 8
+    fireRate: 9.5 # mono
     projectileSpeed: 55 # Mono
     selectedMode: FullAuto
     availableModes:
@@ -69,16 +69,16 @@
     taxAccounts:
       nfsd: 0.2
   - type: SpeedModifiedOnWield # Mono
-    walkModifier: 0.9
-    sprintModifier: 0.75
+    walkModifier: 0.75
+    sprintModifier: 0.65
   - type: GunRequiresWield # Mono
   - type: WieldedCrosshair
     rsi:
       sprite: _RMC14/Interface/MousePointer/lmg_mouse.rsi
       state: all
   - type: WieldDelay # Mono
-    baseDelay: 1.4
-    modifiedDelay: 1.4
+    baseDelay: 0.9
+    modifiedDelay: 0.9
     preventFiring: true
   # Goobstation edit start
   - type: EmitSoundOnPickup

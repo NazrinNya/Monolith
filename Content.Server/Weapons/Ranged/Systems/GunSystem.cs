@@ -165,7 +165,8 @@ public sealed partial class GunSystem : SharedGunSystem
                     CreateAndFireProjectiles(ent.Value, newAmmo, offset);
 
                     break;
-                case HitscanAmmoComponent:
+
+                case HitscanAmmoComponent hitscanammo:
                     if (ent == null)
                         break;
 
@@ -179,10 +180,13 @@ public sealed partial class GunSystem : SharedGunSystem
                     };
                     RaiseLocalEvent(ent.Value, ref hitscanEv);
 
-                    Del(ent);
-
                     Audio.PlayPredicted(gun.SoundGunshotModified, gunUid, user);
+                    // Mono start
+                    Spawn(hitscanammo.CasingPrototype, fromEnt);
+                    Del(ent);
+                    // Mono end
                     break;
+
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -235,7 +239,7 @@ public sealed partial class GunSystem : SharedGunSystem
         }
 
         // Do a throw
-        if (!HasComp<ProjectileComponent>(uid))
+        if (!TryComp(uid, out ProjectileComponent? projectileComp))
         {
             RemoveShootable(uid);
             // TODO: Someone can probably yeet this a billion miles so need to pre-validate input somewhere up the call stack.
@@ -251,6 +255,7 @@ public sealed partial class GunSystem : SharedGunSystem
             predicted.ClientEnt = user;
         }
 
+        projectileComp.Damage *= gun.DamageModifier;
         ShootProjectile(uid, mapDirection, gunVelocity, gunUid, user, gun.ProjectileSpeedModified, offset); // Mono - add offset
         if (HasComp<FireControllableComponent>(gunUid))
         {

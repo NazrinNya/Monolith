@@ -15,7 +15,7 @@
       tags:
         - Cartridge127x99mm
     proto: Cartridge127x99mm
-    capacity: 10
+    capacity: 20
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

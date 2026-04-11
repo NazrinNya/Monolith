@@ -103,15 +103,15 @@
     whitelist:
       tags:
       - Cartridge145x114mm
-    capacity: 5
+    capacity: 10
     proto: Cartridge145x114mm
   - type: SpeedModifiedOnWield
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.05
+    sprintModifier: 0.05
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 7 # Mono - Sniper Buff
-    pvsIncrease: 0.7 # Mono - Sniper Buff
+    maxOffset: 25 # Mono - Sniper Buff
+    pvsIncrease: 4.5 # Mono - Sniper Buff
   - type: StaticPrice # Mono
     price: 1250
 
