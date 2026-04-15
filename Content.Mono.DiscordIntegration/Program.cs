@@ -30,8 +30,6 @@ public sealed class Program
         _client.Log += Log;
         _client.SlashCommandExecuted += SlashCommandHandler;
 
-        var token = "z";
-
         await _client.LoginAsync(TokenType.Bot, token);
         await _client.StartAsync();
 
