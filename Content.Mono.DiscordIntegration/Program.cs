@@ -29,8 +29,7 @@ public sealed class Program
 
         _client.Log += Log;
         _client.SlashCommandExecuted += SlashCommandHandler;
-
-        await _client.LoginAsync(TokenType.Bot, token);
+        
         await _client.StartAsync();
 
         await Task.Delay(-1);
