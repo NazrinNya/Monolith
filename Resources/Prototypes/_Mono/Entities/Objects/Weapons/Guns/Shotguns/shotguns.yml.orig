@@ -167,13 +167,18 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
+<<<<<<< HEAD
+    fireRate: 1
+=======
     fireRate: 0.7
+>>>>>>> mono/main
     selectedMode: Semiauto
     availableModes:
     - SemiAuto
   - type: GunSpreadModifier
     spread: 0.4
   - type: BallisticAmmoProvider
+    autoCycle: false
     whitelist:
       tags:
       - ShellShotgun23x75mmBuckshot
@@ -187,8 +192,12 @@
     vendPrice: 5000
   - type: SpeedModifiedOnWield
     walkModifier: 0.8
+<<<<<<< HEAD
+    sprintModifier: 0.95
+=======
     sprintModifier: 0.90
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 3
     pvsIncrease: 1
+>>>>>>> mono/main
