@@ -709,6 +709,7 @@
       machine_parts: !type:Container
       beaker_slot: !type:ContainerSlot
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.75 # Mono
     reagentOutputSlotId: beaker_slot
     idleState: icon
     runningState: building
@@ -780,6 +781,7 @@
     - OreSmelting
     - RGlassSmelting
     - AdvancedSmelting
+    - BulkSmelting
 
 - type: entity
   parent: BaseLathe
@@ -833,6 +835,7 @@
   - type: Machine
     board: CutterMachineCircuitboard
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.7 # Mono
     producingSound: /Audio/Machines/cutter.ogg
     idleState: icon
     runningState: building

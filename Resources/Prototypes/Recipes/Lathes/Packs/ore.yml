@@ -25,6 +25,18 @@
   - IngotGold1
   - IngotSilver1
   - SheetCopper # Mono
+
+- type: latheRecipePack
+  id: BulkSmelting
+  recipes:
+  - SheetSteel50
+  - SheetGlass50
+  - SheetPlasma50
+  - SheetUranium50
+  - IngotGold50
+  - IngotSilver50
+  - SheetPlasteel50
+
 # Mono End
 
 - type: latheRecipePack
@@ -40,3 +52,4 @@
   - SheetPlasteel1
   - SheetUGlass1
   - SheetRUGlass1
+

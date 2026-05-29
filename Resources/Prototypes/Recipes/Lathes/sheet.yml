@@ -1,38 +1,42 @@
 - type: latheRecipe
   id: SheetSteel
   result: SheetSteel1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawIron: 100
     Coal: 30
 
+# Mono changes start - modify bulk recipes
+
 - type: latheRecipe
-  id: SheetSteel30
+  id: SheetSteel50 # Mono 30 -> 50
+  name: recipe-steel-50
   result: SheetSteel
-  completetime: 2
+  completetime: 8
   materials:
-    RawIron: 3000
-    Coal: 1000
+    RawIron: 5000
+    Coal: 1500
 
 - type: latheRecipe
   id: SheetGlass1
   result: SheetGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawQuartz: 100
 
 - type: latheRecipe
-  id: SheetGlass30
+  id: SheetGlass50 # Mono 30 -> 50
+  name: recipe-glass-50
   result: SheetGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawQuartz: 3000
+    RawQuartz: 5000
 
 # This version is for the autolathe
 - type: latheRecipe
   id: SheetRGlass
   result: SheetRGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     Glass: 100
     Steel: 50
@@ -41,41 +45,41 @@
 - type: latheRecipe
   id: SheetRGlassRaw
   result: SheetRGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawQuartz: 100
     RawIron: 50
     Coal: 15
 
 - type: latheRecipe
-  id: SheetRGlass30
+  id: SheetRGlass50 # Mono 30 -> 50
   result: SheetRGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawQuartz: 3000
-    RawIron: 1500
-    Coal: 500
+    RawQuartz: 5000
+    RawIron: 2500
+    Coal: 750
 
 - type: latheRecipe
   id: SheetPGlass1
   result: SheetPGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawQuartz: 100
     RawPlasma: 100
 
 - type: latheRecipe
-  id: SheetPGlass30
+  id: SheetPGlass50 # Mono 30 -> 50
   result: SheetPGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawQuartz: 3000
-    RawPlasma: 3000
+    RawQuartz: 5000
+    RawPlasma: 5000
 
 - type: latheRecipe
   id: SheetRPGlass1
   result: SheetRPGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawQuartz: 100
     RawPlasma: 100
@@ -83,74 +87,77 @@
     Coal: 15
 
 - type: latheRecipe
-  id: SheetRPGlass30
+  id: SheetRPGlass50 # Mono 30 -> 50
   result: SheetRPGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawQuartz: 3000
-    RawPlasma: 3000
-    RawIron: 1500
-    Coal: 500
+    RawQuartz: 5000
+    RawPlasma: 5000
+    RawIron: 2500
+    Coal: 750
 
 - type: latheRecipe
   id: SheetPlasma1
   result: SheetPlasma1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawPlasma: 100
 
 - type: latheRecipe
-  id: SheetPlasma30
+  id: SheetPlasma50 # Mono 30 -> 50
+  name: recipe-plasma-50
   result: SheetPlasma
-  completetime: 2
+  completetime: 8
   materials:
-    RawPlasma: 3000
+    RawPlasma: 5000
 
 - type: latheRecipe
   id: SheetPlasteel1
   result: SheetPlasteel1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawPlasma: 100
     RawIron: 200 #Twice as durable as steel, Twice the material cost
     Coal: 30
 
 - type: latheRecipe
-  id: SheetPlasteel30
+  id: SheetPlasteel50 # Mono 30 -> 50
+  name: recipe-plasteel-50
   result: SheetPlasteel
-  completetime: 2 # Frontier: 5<2
+  completetime: 8 # Frontier: 5<8
   materials:
-    RawPlasma: 3000
-    RawIron: 6000 #Twice as durable as steel, Twice the material cost
-    Coal: 1000
+    RawPlasma: 5000
+    RawIron: 10000 #Twice as durable as steel, Twice the material cost
+    Coal: 1500
 
 - type: latheRecipe
-  id: SheetUranium30
+  id: SheetUranium50 # Mono 30 -> 50
+  name: recipe-uranium-50
   result: SheetUranium
-  completetime: 2
+  completetime: 8
   materials:
-    RawUranium: 3000
+    RawUranium: 5000
 
 - type: latheRecipe
   id: SheetUGlass1
   result: SheetUGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawUranium: 100
     RawQuartz: 100
 
 - type: latheRecipe
-  id: SheetUGlass30
+  id: SheetUGlass50 # Mono 30 -> 50
   result: SheetUGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawUranium: 3000
-    RawQuartz: 3000
+    RawUranium: 5000
+    RawQuartz: 5000
 
 - type: latheRecipe
   id: SheetRUGlass1
   result: SheetRUGlass1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawUranium: 100
     RawQuartz: 100
@@ -158,61 +165,65 @@
     Coal: 15
 
 - type: latheRecipe
-  id: SheetRUGlass30
+  id: SheetRUGlass50 # Mono 30 -> 50
   result: SheetRUGlass
-  completetime: 2
+  completetime: 8
   materials:
-    RawUranium: 3000
-    RawQuartz: 3000
-    RawIron: 1500
-    Coal: 500
+    RawUranium: 5000
+    RawQuartz: 5000
+    RawIron: 2500
+    Coal: 750
 
 - type: latheRecipe
-  id: IngotGold30
+  id: IngotGold50 # Mono 30 -> 50
+  name: recipe-gold-50
   result: IngotGold
-  completetime: 2
+  completetime: 8
   materials:
-    RawGold: 3000
+    RawGold: 5000
 
 - type: latheRecipe
-  id: IngotSilver30
+  id: IngotSilver50 # Mono 30 -> 50
+  name: recipe-silver-50
   result: IngotSilver
-  completetime: 2
+  completetime: 8
   materials:
-    RawSilver: 3000
+    RawSilver: 5000
 
 - type: latheRecipe
-  id: MaterialBananium10
+  id: MaterialBananium50 # Mono 10 -> 30
   result: MaterialBananium
-  completetime: 2
+  completetime: 8
   materials:
     RawBananium: 3000
+
+# Mono end
 
 - type: latheRecipe
   id: MaterialDiamond
   result: MaterialDiamond1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawDiamond: 100
 
 - type: latheRecipe
   id: SheetUranium1
   result: SheetUranium1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawUranium: 100
 
 - type: latheRecipe
   id: IngotGold1
   result: IngotGold1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawGold: 100
 
 - type: latheRecipe
   id: IngotSilver1
   result: IngotSilver1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawSilver: 100
 
@@ -220,14 +231,14 @@
   id: SheetPlastic
   result: SheetPlastic1
   materialDiscountScale: 0
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     Plastic: 100
 
 - type: latheRecipe
   id: MaterialBananium1
   result: MaterialBananium1
-  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  completetime: 0.06 # Frontier: 0<0.06 (~8/30)
   materials:
     RawBananium: 100
 

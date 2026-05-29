@@ -1,0 +1,7 @@
+recipe-uranium-50 = uranium [50]
+recipe-plasma-50 = plasma [50]
+recipe-gold-50 = gold bar [50]
+recipe-silver-50 = silver bar [50]
+recipe-steel-50 = steel [50]
+recipe-glass-50 = glass [50]
+recipe-plasteel-50 = plasteel [50]

@@ -38,6 +38,7 @@
   - type: Machine
     board: ServiceTechFabCircuitboard
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.87
     idleState: icon
     runningState: icon
     staticPacks:
@@ -73,6 +74,7 @@
   - type: Machine
     board: EngineeringTechFabCircuitboard
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.9
     idleState: icon
     runningState: icon
     staticPacks:
@@ -110,6 +112,7 @@
   - type: Machine
     board: SalvageTechFabCircuitboardNF
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.9
     idleState: icon
     runningState: icon
     staticPacks:
@@ -363,6 +366,7 @@
   - type: Machine
     board: BlueprintLithographMachineCircuitboard
   - type: Lathe
+    partRatingMaterialUseMultiplier: 0.65
     producingSound: /Audio/Machines/circuitprinter.ogg
     idleState: icon
     runningState: building
