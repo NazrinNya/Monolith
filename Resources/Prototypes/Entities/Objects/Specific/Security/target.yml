@@ -30,13 +30,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 1500 # Mono
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 1250 # Mono
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -93,6 +93,7 @@
     graph: ShootingTargets
     node: TargetClown
   # End Mono
+
 
 # put it on a salvage or something
 - type: entity
