@@ -371,7 +371,7 @@ namespace Content.Shared.Stacks
         {
             // on client, lingering stacks that start at 0 need to be darkened
             // on server this does nothing
-            SetCount(uid, component.Count, component);
+            SetCount(uid, Math.Clamp(component.Count, 0, GetMaxCount(component)), component); // mono - fix stack overflowing if initial count exceeds max
 
             if (!TryComp(uid, out AppearanceComponent? appearance))
                 return;
