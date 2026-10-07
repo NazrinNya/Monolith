@@ -538,7 +538,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Bananium: 150
+      Bananium: 2000 # Mono 150 -> 2000
   - type: Sprite
     state: bananium_1
     layers:

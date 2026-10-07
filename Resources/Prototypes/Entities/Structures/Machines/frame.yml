@@ -56,6 +56,7 @@
       sprite: Structures/Machines/parts.rsi
       state: box_0
       snapCardinals: true
+    - type: GravityAffected # Mono
 
 - type: entity
   id: MachineFrame
@@ -124,6 +125,7 @@
           whitelist:
             components:
             - MachineBoard
+    - type: GravityAffected # Mono
 
 - type: entity
   id: MachineFrameDestroyed

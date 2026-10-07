@@ -89,7 +89,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Plasma: 100
+      Plasma: 1000 # Mono 100 -> 1000
   - type: Stack
     stackType: Plasma
     baseLayer: base
@@ -152,7 +152,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 100
+      Plastic: 1000 # 100 -> 1000
   - type: Stack
     stackType: Plastic
     baseLayer: base
@@ -175,9 +175,9 @@
       plastic:
         reagents:
         - ReagentId: Oil
-          Quantity: 1 # Frontier: 5<1 (consistency with plastic reaction)
+          Quantity: 5
         - ReagentId: Phosphorus
-          Quantity: 1 # Frontier: 5<1 (consistency with plastic reaction)
+          Quantity: 5
         canReact: false
 
 - type: entity
@@ -214,7 +214,7 @@
   - type: BadFood
   - type: PhysicalComposition
     materialComposition:
-      Uranium: 100
+      Uranium: 1500 # 100 -> 1500
   - type: Stack
     stackType: Uranium
     baseLayer: base
@@ -251,14 +251,14 @@
   #   color: "#9be792" # Frontier
   - type: UraniumMaterials # Frontier
 
-- type: entity # Mono - added stack of 30
-  parent: SheetUranium
-  id: SheetUranium30
-  name: uranium
-  suffix: 30
-  components:
-  - type: Stack
-    count: 30
+# - type: entity # Mono - added stack of 30
+#   parent: SheetUranium
+#   id: SheetUranium30
+#   name: uranium
+#   suffix: 30
+#   components:
+#   - type: Stack
+#     count: 30
 
 - type: entity # Mono - added stack of 20
   parent: SheetUranium

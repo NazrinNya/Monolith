@@ -59,7 +59,7 @@
   name: bananium
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: bananium }
   spawn: MaterialBananium1
-  maxCount: 30 # mono
+  maxCount: 10 # mono
 
 - type: stack
   id: MeatSheets

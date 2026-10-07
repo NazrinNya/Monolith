@@ -186,7 +186,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Plasteel: 100
+      Plasteel: 500 # Mono 100 -> 500
   - type: Stack
     stackType: Plasteel
     baseLayer: base

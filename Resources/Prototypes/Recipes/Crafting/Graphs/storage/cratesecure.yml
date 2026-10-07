@@ -7,7 +7,7 @@
         - to: cratesecure
           steps:
             - material: Steel
-              amount: 5
+              amount: 2 # mono
             - material: Cable
               amount: 2
               doAfter: 5
@@ -28,7 +28,7 @@
           completed:
             - !type:SpawnPrototype
               prototype: SheetSteel1
-              amount: 5
+              amount: 2 # mono
             - !type:SpawnPrototype
               prototype: CableApcStack1
               amount: 2

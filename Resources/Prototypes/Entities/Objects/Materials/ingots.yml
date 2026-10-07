@@ -35,7 +35,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Gold: 100
+      Gold: 5000 # Mono 100 -> 5000
   - type: Stack
     stackType: Gold
     baseLayer: base
@@ -82,7 +82,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Silver: 100
+      Silver: 2500 # Mono 100 -> 2500
   - type: Stack
     stackType: Silver
     baseLayer: base
