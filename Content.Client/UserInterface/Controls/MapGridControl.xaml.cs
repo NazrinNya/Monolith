@@ -77,6 +77,8 @@ public partial class MapGridControl : LayoutContainer
     /// </summary>
     public float MaxRadarRange { get; private set; } = 256f * 100f; // Mono - 2560m -> 25600m
 
+    public float MaxRenderRange { get; private set; } = 325f * 10f; // Monolith
+
     public Vector2 MaxRadarRangeVector => new Vector2(MaxRadarRange, MaxRadarRange);
 
     protected Vector2 MidPointVector => new Vector2(MidPoint, MidPoint);

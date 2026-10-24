@@ -777,6 +777,8 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         var viewBounds = new Box2Rotated(new Box2(-WorldRange, -WorldRange, WorldRange, WorldRange).Translated(mapPos.Position), worldRot, mapPos.Position);
         var viewAABB = viewBounds.CalcBoundingBox();
 
+        var renderAABB = new Box2(-MaxRenderRange, -MaxRenderRange, MaxRenderRange, MaxRenderRange);
+
         foreach (var grid in _grids)
         {
             if (renderFill)
@@ -795,6 +797,11 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
                 var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
                 var hideColor = hideLabel && iff != null && (iff.Flags & IFFFlags.AlwaysShowColor) == 0x0;
                 var labelColor = hideColor ? blipOnly ? Color.Orange : Color.White : _shuttles.GetIFFColor(grid, self: false, iff);
+
+                var gridAABB = curGridToWorld.TransformBox(grid.Comp.LocalAABB);
+
+                if (!gridAABB.Intersects(renderAABB))
+                    continue;
 
                 if (!blipOnly)
                 {
